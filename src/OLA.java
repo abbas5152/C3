@@ -13,17 +13,17 @@ public class OLA {
         return  c1;
     }
     public int calculateBill(Car car){
-        int fare;
+        
         OLA o1=new OLA();
        if(o1.bookCar(car.getNumberOfPassenger(),car.getNumberOfKms()) instanceof HatchBack){
-           fare= car.getNumberOfKms()* 15;
+           return car.getNumberOfKms()* 15;
 
 
         }
        else{
-           fare= car.getNumberOfKms()*20;
+          return car.getNumberOfKms()*20;
        }
-       return fare;
+      
     }
 
 
