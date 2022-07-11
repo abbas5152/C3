@@ -10,11 +10,11 @@ public class Main {
         System.out.println("Enter passenger");
         int p=s1.nextInt();
         car.setNumberOfPassenger(p);
-        System.out.println(n);
-        System.out.println(p);
+//         System.out.println(n);
+//         System.out.println(p);
         OLA myOla = new OLA();
         Car myCar = myOla.bookCar(p, n);
-        System.out.println(myCar);
+//         System.out.println(myCar);
         myCar.setNumberOfKms(n);
         int res = myOla.calculateBill(myCar);
         System.out.println("The total fare amount is "+ res);
